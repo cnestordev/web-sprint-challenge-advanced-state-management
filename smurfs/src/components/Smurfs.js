@@ -5,7 +5,7 @@ import Smurf from './Smurf'
 
 function Smurfs({ smurfs }) {
 
-    const smurfList = smurfs.map(item => <Smurf key={item.id} />)
+    const smurfList = smurfs.map(item => <Smurf data={item} key={item.id} />)
 
     return (
         <div>
