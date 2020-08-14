@@ -27,9 +27,9 @@ function Form(props) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input onChange={handleChange} name="name" placeholder="name" type="text" />
-            <input onChange={handleChange} name="age" placeholder="age" type="number" />
-            <input onChange={handleChange} name="height" placeholder="height" type="number" />
+            <input onChange={handleChange} name="name" placeholder="name" type="text" required />
+            <input onChange={handleChange} name="age" placeholder="age" type="number" required />
+            <input onChange={handleChange} name="height" placeholder="height in cm" type="number" required />
             <button>Submit</button>
         </form>
     )
